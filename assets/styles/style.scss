@@ -1,0 +1,80 @@
+$font-family: 'Hanken Grotesk', sans-serif;
+
+//Primary Color
+$Light_red: hsl(0, 100%, 67%);
+$Orangey_yellow: hsl(39, 100%, 56%);
+$Green_teal: hsl(166, 100%, 37%);
+$Cobalt_blue: hsl(234, 85%, 45%);
+
+//Gradiant
+$background_gradient: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+$Light_slate_blue: hsl(252, 100%, 67%);
+$Light_royal_blue: hsl(241, 81%, 54%);
+
+$circle_gradient: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+$Violet_blue: hsla(256, 72%, 46%, 1);
+$Persian_blue: hsla(241, 72%, 46%, 0);
+
+//Neutral Color
+$White: hsl(0, 0%, 100%);
+$Pale_blue: hsl(221, 100%, 96%);
+$Light_lavender: hsl(241, 100%, 89%);
+$Dark_gray_blue: hsl(224, 30%, 27%);
+
+body{
+    font-family: $font-family;
+    .result{
+        background: $background_gradient;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $Light_royal_blue;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        .result_top{
+            .text_top{
+                color: $Light_lavender;
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+            padding: 1em 0 1em 0;
+        }
+        .result_circle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            color: $Light_lavender;
+            font-weight: 700;
+
+            background: $circle_gradient;
+            border-radius: 50%;
+            margin-top: 1em;
+            padding: 1em;
+            width: 100px;
+            height: 100px;
+
+            strong{
+                color: $White;
+                font-size: 3em;
+                font-weight: 800;
+                margin-bottom: .2em;
+            }
+        }
+        .result_score{
+            display: flex;
+            flex-direction: column;
+            color: $Light_lavender;
+            margin: 2.5em;
+            
+
+            strong{
+                color: $Pale_blue;
+                font-size: 1.5em;
+                font-weight: 700;
+                margin-bottom: .5em;
+            }
+        }
+    }
+}

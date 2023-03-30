@@ -1,1 +1,52 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body .result {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(241, 81%, 54%);
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+body .result .result_top {
+  padding: 1em 0 1em 0;
+}
+body .result .result_top .text_top {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+body .result .result_circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  margin-top: 1em;
+  padding: 1em;
+  width: 100px;
+  height: 100px;
+}
+body .result .result_circle strong {
+  color: hsl(0, 0%, 100%);
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+body .result .result_score {
+  display: flex;
+  flex-direction: column;
+  color: hsl(241, 100%, 89%);
+  margin: 2.5em;
+}
+body .result .result_score strong {
+  color: hsl(221, 100%, 96%);
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}/*# sourceMappingURL=style.css.map */
