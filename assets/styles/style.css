@@ -8,8 +8,7 @@ body .result {
   align-items: center;
   text-align: center;
   background-color: hsl(241, 81%, 54%);
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  border-radius: 0 0 1.6em 1.6em;
 }
 body .result .result_top {
   padding: 2em 0 2em 0;
@@ -51,4 +50,69 @@ body .result .result_score strong {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 0.5em;
+}
+body .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2em;
+}
+body .card .card_top {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  font-size: 1.2em;
+  margin: 2em 0 1em 0;
+}
+body .card .card_mid .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 55px;
+  margin: 1em 0;
+  padding: 0 1em;
+  border-radius: 5px;
+}
+body .card .card_mid .cards .texto {
+  display: flex;
+  align-items: center;
+}
+body .card .card_mid .cards .numeros {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body .card .card_mid .cards .numeros strong {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+body .card .card_mid .cards .numeros p {
+  color: hsl(224, 30%, 27%);
+}
+body .card .card_mid .red {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.137);
+}
+body .card .card_mid .yellow {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.247);
+}
+body .card .card_mid .green {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.24);
+}
+body .card .card_mid .blue {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.226);
+}
+body .card .continue {
+  text-align: center;
+  border: none;
+  border-radius: 5em;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.2em;
+  font-size: 1em;
+  font-weight: 800;
+}
+body footer {
+  margin-top: 1em;
 }/*# sourceMappingURL=style.css.map */

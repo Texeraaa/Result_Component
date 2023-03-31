@@ -2,9 +2,13 @@ $font-family: 'Hanken Grotesk', sans-serif;
 
 //Primary Color
 $Light_red: hsl(0, 100%, 67%);
+$Opacity_red: hsla(0, 100%, 67%, 0.137);
 $Orangey_yellow: hsl(39, 100%, 56%);
+$Opacity_yellow: hsla(39, 100%, 56%, 0.247);
 $Green_teal: hsl(166, 100%, 37%);
+$Opacity_green: hsla(166, 100%, 37%, 0.24);
 $Cobalt_blue: hsl(234, 85%, 45%);
+$Opacity_blue: hsla(234, 85%, 45%, 0.226);
 
 //Gradiant
 $background_gradient: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -30,8 +34,7 @@ body{
         align-items: center;
         text-align: center;
         background-color: $Light_royal_blue;
-        border-bottom-left-radius: 2em;
-        border-bottom-right-radius: 2em;
+        border-radius: 0 0 1.6em 1.6em;
         .result_top{
             .text_top{
                 color: $Light_lavender;
@@ -76,5 +79,72 @@ body{
                 margin-bottom: .5em;
             }
         }
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 2em;
+        .card_top{
+            color: $Dark_gray_blue;
+            font-weight: 800;
+            font-size: 1.2em;
+            margin: 2em 0 1em 0;
+        }
+        .card_mid{
+            .cards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 55px;
+                margin: 1em 0;
+                padding: 0 1em;
+                border-radius: 5px;
+                .texto{
+                    display: flex;
+                    align-items: center;
+                }
+                .numeros{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    strong{
+                        color: $Dark_gray_blue;
+                        font-weight: 800;
+                    }
+                    p{
+                        color: $Dark_gray_blue;
+                    }
+                }
+            }
+            .red{
+                color: $Light_red;
+                background-color: $Opacity_red;
+            }
+            .yellow{
+                color: $Orangey_yellow;
+                background-color: $Opacity_yellow;
+            }
+            .green{
+                color: $Green_teal;
+                background-color: $Opacity_green;
+            }
+            .blue{
+                color: $Cobalt_blue;
+                background-color: $Opacity_blue;
+            }
+        }
+        .continue{
+            text-align: center;
+            border: none;
+            border-radius: 5em;
+            background-color: $Dark_gray_blue;
+            color: $White;
+            padding: 1.2em;
+            font-size: 1em;
+            font-weight: 800;
+        }
+    }
+    footer{
+        margin-top: 1em;
     }
 }
