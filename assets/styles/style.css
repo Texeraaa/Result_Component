@@ -1,7 +1,8 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
 }
-body .result {
+
+.result {
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   display: flex;
   flex-direction: column;
@@ -10,15 +11,15 @@ body .result {
   background-color: hsl(241, 81%, 54%);
   border-radius: 0 0 1.6em 1.6em;
 }
-body .result .result_top {
+.result .result_top {
   padding: 2em 0 2em 0;
 }
-body .result .result_top .text_top {
+.result .result_top .text_top {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
   font-size: 1.2em;
 }
-body .result .result_circle {
+.result .result_circle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,40 +31,39 @@ body .result .result_circle {
   width: 100px;
   height: 100px;
 }
-body .result .result_circle strong {
+.result .result_circle strong {
   color: hsl(0, 0%, 100%);
   font-size: 3em;
   font-weight: 800;
   margin-bottom: 0.2em;
 }
-body .result .result_score {
-  display: flex;
-  flex-direction: column;
+.result .result_score {
   margin: 1em 2.5em 2.5em;
 }
-body .result .result_score p {
+.result .result_score p {
   color: hsl(241, 100%, 89%);
   line-height: 1.2em;
 }
-body .result .result_score strong {
+.result .result_score strong {
   color: hsl(221, 100%, 96%);
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-body .card {
+
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 2em;
 }
-body .card .card_top {
+.card .card_top {
   color: hsl(224, 30%, 27%);
   font-weight: 800;
   font-size: 1.2em;
   margin: 2em 0 1em 0;
 }
-body .card .card_mid .cards {
+.card .card_mid .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 55px;
@@ -71,39 +71,39 @@ body .card .card_mid .cards {
   padding: 0 1em;
   border-radius: 5px;
 }
-body .card .card_mid .cards .texto {
+.card .card_mid .cards .texto {
   display: flex;
   align-items: center;
 }
-body .card .card_mid .cards .numeros {
+.card .card_mid .cards .numeros {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-body .card .card_mid .cards .numeros strong {
+.card .card_mid .cards .numeros strong {
   color: hsl(224, 30%, 27%);
   font-weight: 800;
 }
-body .card .card_mid .cards .numeros p {
+.card .card_mid .cards .numeros p {
   color: hsl(224, 30%, 27%);
 }
-body .card .card_mid .red {
+.card .card_mid .red {
   color: hsl(0, 100%, 67%);
   background-color: hsla(0, 100%, 67%, 0.137);
 }
-body .card .card_mid .yellow {
+.card .card_mid .yellow {
   color: hsl(39, 100%, 56%);
   background-color: hsla(39, 100%, 56%, 0.247);
 }
-body .card .card_mid .green {
+.card .card_mid .green {
   color: hsl(166, 100%, 37%);
   background-color: hsla(166, 100%, 37%, 0.24);
 }
-body .card .card_mid .blue {
+.card .card_mid .blue {
   color: hsl(234, 85%, 45%);
   background-color: hsla(234, 85%, 45%, 0.226);
 }
-body .card .continue {
+.card .continue {
   text-align: center;
   border: none;
   border-radius: 5em;
@@ -113,6 +113,41 @@ body .card .continue {
   font-size: 1em;
   font-weight: 800;
 }
-body footer {
+.card .continue:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
   margin-top: 1em;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.6em;
+    box-shadow: 6px 11px 28px 24px rgba(0, 0, 0, 0.1);
+  }
+  .card {
+    width: auto;
+    padding: 0 2em;
+    margin: 0.5em 0;
+    width: 35vw;
+  }
+  .result {
+    border-radius: 1.6em;
+    height: auto;
+    width: 33.33%;
+  }
+  .result .result_score {
+    padding-top: 0.5em;
+    width: 15vw;
+  }
 }/*# sourceMappingURL=style.css.map */

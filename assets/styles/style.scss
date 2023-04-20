@@ -27,124 +27,159 @@ $Dark_gray_blue: hsl(224, 30%, 27%);
 
 body{
     font-family: $font-family;
-    .result{
-        background: $background_gradient;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: $Light_royal_blue;
-        border-radius: 0 0 1.6em 1.6em;
-        .result_top{
-            .text_top{
-                color: $Light_lavender;
-                font-weight: 700;
-                font-size: 1.2em;
-            }
-            padding: 2em 0 2em 0;
-        }
-        .result_circle{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
+}
+.result{
+    background: $background_gradient;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $Light_royal_blue;
+    border-radius: 0 0 1.6em 1.6em;
+    .result_top{
+        .text_top{
             color: $Light_lavender;
             font-weight: 700;
-
-            background: $circle_gradient;
-            border-radius: 50%;
-            padding: 1em;
-            width: 100px;
-            height: 100px;
-
-            strong{
-                color: $White;
-                font-size: 3em;
-                font-weight: 800;
-                margin-bottom: .2em;
-            }
+            font-size: 1.2em;
         }
-        .result_score{
-            display: flex;
-            flex-direction: column;
-            margin: 1em 2.5em 2.5em;
-            p{
-                color: $Light_lavender;
-                line-height: 1.2em;
-            }
-            strong{
-                color: $Pale_blue;
-                font-size: 1.5em;
-                font-weight: 700;
-                margin-bottom: .5em;
-            }
-        }
+        padding: 2em 0 2em 0;
     }
-    .card{
+    .result_circle{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 2em;
-        .card_top{
-            color: $Dark_gray_blue;
-            font-weight: 800;
-            font-size: 1.2em;
-            margin: 2em 0 1em 0;
-        }
-        .card_mid{
-            .cards{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                height: 55px;
-                margin: 1em 0;
-                padding: 0 1em;
-                border-radius: 5px;
-                .texto{
-                    display: flex;
-                    align-items: center;
-                }
-                .numeros{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    strong{
-                        color: $Dark_gray_blue;
-                        font-weight: 800;
-                    }
-                    p{
-                        color: $Dark_gray_blue;
-                    }
-                }
-            }
-            .red{
-                color: $Light_red;
-                background-color: $Opacity_red;
-            }
-            .yellow{
-                color: $Orangey_yellow;
-                background-color: $Opacity_yellow;
-            }
-            .green{
-                color: $Green_teal;
-                background-color: $Opacity_green;
-            }
-            .blue{
-                color: $Cobalt_blue;
-                background-color: $Opacity_blue;
-            }
-        }
-        .continue{
-            text-align: center;
-            border: none;
-            border-radius: 5em;
-            background-color: $Dark_gray_blue;
+
+        color: $Light_lavender;
+        font-weight: 700;
+
+        background: $circle_gradient;
+        border-radius: 50%;
+        padding: 1em;
+        width: 100px;
+        height: 100px;
+
+        strong{
             color: $White;
-            padding: 1.2em;
-            font-size: 1em;
+            font-size: 3em;
             font-weight: 800;
+            margin-bottom: .2em;
         }
     }
-    footer{
-        margin-top: 1em;
+    .result_score{
+        margin: 1em 2.5em 2.5em;
+        p{
+            color: $Light_lavender;
+            line-height: 1.2em;
+        }
+        strong{
+            color: $Pale_blue;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: .5em;
+        }
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2em;
+    .card_top{
+        color: $Dark_gray_blue;
+        font-weight: 800;
+        font-size: 1.2em;
+        margin: 2em 0 1em 0;
+    }
+    .card_mid{
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 55px;
+            margin: 1em 0;
+            padding: 0 1em;
+            border-radius: 5px;
+            .texto{
+                display: flex;
+                align-items: center;
+            }
+            .numeros{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                strong{
+                    color: $Dark_gray_blue;
+                    font-weight: 800;
+                }
+                p{
+                    color: $Dark_gray_blue;
+                }
+            }
+        }
+        .red{
+            color: $Light_red;
+            background-color: $Opacity_red;
+        }
+        .yellow{
+            color: $Orangey_yellow;
+            background-color: $Opacity_yellow;
+        }
+        .green{
+            color: $Green_teal;
+            background-color: $Opacity_green;
+        }
+        .blue{
+            color: $Cobalt_blue;
+            background-color: $Opacity_blue;
+        }
+    }
+    .continue{
+        text-align: center;
+        border: none;
+        border-radius: 5em;
+        background-color: $Dark_gray_blue;
+        color: $White;
+        padding: 1.2em;
+        font-size: 1em;
+        font-weight: 800;
+
+            &:hover{
+                background: $background_gradient;
+            }
+    }
+    
+}
+footer{
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .main{
+        display: flex;
+        background-color: $White;
+        border-radius: 1.6em;
+        box-shadow: 6px 11px 28px 24px rgba(0,0,0,0.1);
+    }
+    .card{
+        width: auto;
+        padding: 0 2em;
+        margin: .5em 0;
+        width: 35vw;
+    }
+    .result{
+        border-radius: 1.6em;
+        height: auto;
+        width: 33.33%;
+        .result_score{
+            padding-top: .5em;
+            width: 15vw;
+        }
     }
 }
